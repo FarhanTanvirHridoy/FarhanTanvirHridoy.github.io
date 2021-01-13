@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script>
+        function check() {
+            var x = document.getElementById('text').value;
+            x = x.toLowerCase()
+            if(x == 'husband') document.getElementById('h1').innerHTML = 'Etto valobaso amake?';
+            else document.getElementById('h1').innerHTML = 'Ufff hoy ni. amader kintu biye hoye geche'
+        }
+    </script>
+    <title>Mumu</title>
 </head>
 <body>
-    <h1>I Love You Mumu!</h1>
+    
+    
+    Who is Farhan?
+    <input type="text" name="text" id="text">
+    <button onclick="check()">Check</button>
+    <h1 id='h1'></h1>   
+    
 </body>
 </html>
